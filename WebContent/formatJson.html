@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Format JSON</title>
+
+<link href="css/s.css" type="text/css" rel="stylesheet"></link>
+<link href="css/bootstrap.min.css" rel="stylesheet"
+	media="screen">
+</head>
+<body>
+    <div id="wrap">
+	<div class="container"></div>
+<div class="HeadersRow">
+  <h3>JSON Format and Highlight :</h3>
+  <textarea id="RawJson">
+  </textarea>
+</div>
+
+<div id="ControlsRow" >
+<div   class="btn-toolbar">
+  <input type="Button" class="btn pull-left"  value="Format" onclick="Process()"/>  
+  <!-- <input type="Button" class="btn pull-left"  value="CopyAll"  onclick="CopyAll()"/> -->
+  <input type="Button" class="btn pull-left"  value="SelectAll"  onclick="SelectAllClicked()"/>
+</div>
+  <label for="QuoteKeys" class="pull-left">
+    <input type="checkbox" id="QuoteKeys" onclick="QuoteKeysClicked()" checked="checked" /> 
+    Quotation Marks
+  </label>
+  <div id="CollapsibleViewHolder" >
+      <label for="CollapsibleView">
+        <input type="checkbox" id="CollapsibleView" onclick="CollapsibleViewClicked()" checked="checked" /> 
+        Show Control
+      </label>
+  </div>
+    <div id="TabSizeHolder"  >
+        <label id="Indentation">Indentation</label>
+    <select id="TabSize"  onchange="TabSizeChanged()" >
+      <option value="1">1</option>
+      <option value="2" selected="selected">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
+
+ 
+  </div>
+  <div id="CollapsibleViewDetail"  class="btn-toolbar">
+    <a  class="btn btn-mini"  href="javascript:void(0);" onclick="ExpandAllClicked()">spread</a>
+    <a  class="btn btn-mini" href="javascript:void(0);" onclick="CollapseAllClicked()">collapse</a>
+    <a  class="btn btn-mini" href="javascript:void(0);" onclick="CollapseLevel(3)">Level3</a>
+    <a class="btn btn-mini"  href="javascript:void(0);" onclick="CollapseLevel(4)">Level4</a>
+    <a  class="btn btn-mini" href="javascript:void(0);" onclick="CollapseLevel(5)">Level5</a>
+    <a class="btn btn-mini"  href="javascript:void(0);" onclick="CollapseLevel(6)">Level6</a>
+    <a class="btn btn-mini"  href="javascript:void(0);" onclick="CollapseLevel(7)">Level7</a>
+    <a class="btn btn-mini"  href="javascript:void(0);" onclick="CollapseLevel(8)">Level8</a>
+    <a class="btn btn-mini"  href="javascript:void(0);" onclick="CollapseLevel(9)">Level9</a>
+  </div>
+</div>
+<div id="Canvas" class="Canvas"></div>
+<script type="text/javascript" src="m.js"></script>
+	<script type="text/javascript" src="js/c.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<div id="footer">
+			<p class="muted credit pull-right">
+				© 2013 Edited By <a href="https://github.com/alaahong">Ian Zhang</a>
+			</p>
+
+	</div>
+	</div>
+</body>
+</html>
