@@ -1,11 +1,11 @@
-formatJson
+formatJson 1.0
 ==========
 
-a tip to format json data online
+a simple tool to format json data online
 
 ==========
 
-The format code comes from osc,and I add bootstrap and some external function.
+The core format code comes from osc,and I add bootstrap plug-in and some external function.
 
 ==========
 The first version could format the json,
